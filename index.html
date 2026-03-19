@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ANIÉ Beauty</title>
+  <meta name="description" content="ANIÉ Beauty — Elegance Perfected. Coming Soon." />
+  <meta property="og:title" content="ANIÉ Beauty" />
+  <meta property="og:description" content="Elegance Perfected. Coming Soon." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://aniecosmetics.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@200;300&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      background: #ffffff;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      width: 100%;
+      padding-bottom: 2vh;
+    }
+
+    .logo-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      animation: fadeIn 1.8s cubic-bezier(0.25, 0.1, 0.25, 1) 0.3s forwards;
+    }
+
+    .logo {
+      width: clamp(240px, 34vw, 480px);
+      height: auto;
+      display: block;
+    }
+
+    .divider {
+      width: 40px;
+      height: 0.5px;
+      background: #bbb;
+      margin: clamp(28px, 4vh, 48px) auto;
+      opacity: 0;
+      animation: dividerIn 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) 1.2s forwards;
+    }
+
+    .tagline-main {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      font-size: clamp(8px, 0.68vw, 10.5px);
+      letter-spacing: 0.48em;
+      text-transform: uppercase;
+      color: #333;
+      text-align: center;
+      opacity: 0;
+      animation: fadeUp 1.4s cubic-bezier(0.25, 0.1, 0.25, 1) 1.6s forwards;
+    }
+
+    footer {
+      padding: 2rem 2rem 2.4rem;
+      text-align: center;
+      opacity: 0;
+      animation: fadeUp 1.2s cubic-bezier(0.25, 0.1, 0.25, 1) 2.2s forwards;
+    }
+
+    footer a {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 200;
+      font-size: 9px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #333;
+    }
+
+    .footer-dot {
+      display: inline-block;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background: #ccc;
+      vertical-align: middle;
+      margin: 0 1.4rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.97); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes dividerIn {
+      from { opacity: 0; width: 0; }
+      to { opacity: 1; width: 40px; }
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: clamp(200px, 60vw, 300px);
+      }
+      .tagline-main {
+        font-size: 8px;
+        letter-spacing: 0.38em;
+        padding: 0 20px;
+      }
+      footer a {
+        font-size: 8px;
+        letter-spacing: 0.24em;
+      }
+      .footer-dot {
+        margin: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo-wrap">
+      <img class="logo" src="ANIE_.png" alt="ANIÉ Beauty" />
+    </div>
+    <div class="divider"></div>
+    <span class="tagline-main">Elegance Perfected · Coming Soon</span>
+  </div>
+
+  <footer>
+    <a href="https://www.instagram.com/maisonanie/" target="_blank" rel="noopener">Instagram</a>
+    <span class="footer-dot"></span>
+    <a href="mailto:hello@aniecosmetics.com">Contact</a>
+  </footer>
+</body>
+</html>
